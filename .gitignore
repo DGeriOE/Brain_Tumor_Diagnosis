@@ -1,0 +1,19 @@
+# Adathalmazok és lokális adatok (Cseréld ki a mappád nevére, ha más!)
+data/
+dataset/
+*.zip
+*.tar.gz
+
+# Python & Jupyter specifikus fájlok
+__pycache__/
+*.pyc
+.ipynb_checkpoints
+.virtualenv
+venv/
+.env
+
+# VS Code specifikus dolgok
+.vscode/
+
+# Grafikonok, ha nem akarod őket commitolni
+# modell_osszehasonlitas.png
