@@ -7,3 +7,5 @@ ipykernel
 pandas
 xgboost
 joblib
+notebook
+jupyter
