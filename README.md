@@ -32,32 +32,33 @@ BrainTumorDiagnosis/
 └── README.md                        # Ez a dokumentáció
 ```
 
----
+## 🔧 Telepítés és futtatás (Conda)
 
-## 🛠️ Telepítés és Környezet Beállítása
+A projekt egy dedikált Conda-környezetet használ a függőségek kezelésére.
 
-A projekt futtatásához javasolt a [Conda](https://docs.conda.io/) környezetkezelő használata.
+1. **Repozitórium klónozása:**
+   ```bash
+   git clone https://github.com/DGeriOE/Brain_Tumor_Diagnosis.git
+   cd Brain_Tumor_Diagnosis
+   ```
 
-### Környezet létrehozása Conda segítségével:
-
-1. Nyiss meg egy terminált a projekt gyökérkönyvtárában.
-2. Hozd létre a környezetet az `environment.yml` fájl alapján:
+2. **Környezet létrehozása:**
    ```bash
    conda env create -f environment.yml
    ```
-3. Aktiváld a frissen létrehozott környezetet:
+
+3. **Környezet aktiválása:**
    ```bash
    conda activate brain_tumor_diagnosis
    ```
 
-### Telepítés Pip használatával (alternatív):
+4. **Jupyter notebook indítása (és a [projekt.ipynb](projekt.ipynb) megnyitása):**
+   ```bash
+   jupyter notebook
+   ```
 
-Ha nem Condát használsz, közvetlenül a `requirements.txt` alapján is telepítheted a szükséges csomagokat egy tiszta Python 3.11 környezetben:
-```bash
-pip install -r requirements.txt
-# Szükség esetén az XGBoost telepítése:
-pip install xgboost
-```
+> [!NOTE]
+> **Alternatív telepítés (Pip):** Ha nem Condát használsz, közvetlenül a `requirements.txt` alapján is telepítheted a függőségeket egy Python 3.11 környezetben: `pip install -r requirements.txt`
 
 ---
 
@@ -106,13 +107,4 @@ A projekt során megvizsgáltuk a jellemzők standardizálásának (StandardScal
 2. **Skálázás-invariáns modellek:** A döntési fákon alapuló modellek (mint az **XGBoost** és a **Random Forest**) teljesítményét nem befolyásolta a standardizálás, mindkét esetben azonos eredményt adtak.
 3. **Legjobb Modell:** A legjobb eredményt az **XGBoost** nyújtotta **93.59%**-os pontossággal és **0.9912**-es ROC-AUC értékkel, szorosan követve az SVM-mel és a Random Foresttel.
 
----
 
-## 🚀 Futtatás
-
-1. Indítsd el a Jupyter Notebook felületét:
-   ```bash
-   jupyter notebook
-   ```
-2. Nyisd meg a [projekt.ipynb](projekt.ipynb) fájlt.
-3. Futtasd le a cellákat a teljes csővezeték végrehajtásához és a modellek kiértékeléséhez.
