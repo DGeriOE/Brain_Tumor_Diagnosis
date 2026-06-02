@@ -62,7 +62,7 @@ A projekt egy dedikált Conda-környezetet használ a függőségek kezelésére
 
 ---
 
-## ⚙️ A Feldolgozási Csővezeték (Pipeline)
+## ⚙️ A feldolgozási pipeline
 
 A projekt a képek beolvasásától a végső osztályozásig az alábbi lépéseket követi:
 
