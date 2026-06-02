@@ -4,3 +4,6 @@ scikit-image
 scikit-learn
 matplotlib
 ipykernel
+pandas
+xgboost
+joblib
